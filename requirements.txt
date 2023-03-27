@@ -8,7 +8,8 @@ matplotlib==3.7.1
 seaborn==0.12.2
 plotly==5.9.0
 missingno==0.5.1
+dill==0.3.6
 scikit-learn==1.2.1
 xgboost==1.7.2
 catboost==1.1.1
--e .
+# -e .
