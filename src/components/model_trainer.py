@@ -1,10 +1,8 @@
 import os
 import sys
 
-
 import pandas as pd
 import numpy as np
-
 
 from sklearn.linear_model import LinearRegression
 from sklearn.neighbors import KNeighborsRegressor
@@ -13,12 +11,9 @@ from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, A
 from xgboost import XGBRegressor
 from catboost import CatBoostRegressor
 
-
 from sklearn.metrics import mean_squared_error, r2_score
 
-
 from dataclasses import dataclass
-
 
 from src.exception import Custom_Exception
 from src.logger import logging
@@ -30,9 +25,11 @@ from src.utils import save_object, evaluate_models
 class ModelTrainerConfig:
     trained_model_file_path = os.path.join('artifacts', 'model.pkl')
 
+
 class ModelTrainer:
     def __init__(self):
         self.model_trainer_config = ModelTrainerConfig()
+
 
     def initiate_model_trainer(self, train_array, test_array):
         try:
@@ -131,4 +128,4 @@ class ModelTrainer:
 
         except Exception as e:
             raise Custom_Exception(e, sys)
-        
+                

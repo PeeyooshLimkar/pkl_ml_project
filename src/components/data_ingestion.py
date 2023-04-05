@@ -3,12 +3,9 @@ import sys
 
 import pandas as pd
 
-
 from sklearn.model_selection import train_test_split
 
-
 from dataclasses import dataclass
-
 
 from src.logger import logging
 from src.exception import Custom_Exception
@@ -32,6 +29,7 @@ class DataIngestion:
     def __init__(self):
         # Store all paths in ingestion_config
         self.ingestion_config = DataIngestionConfig()
+
 
     def initiate_data_ingestion(self):
         logging.info('Entered into data ingestion method.')
@@ -81,3 +79,5 @@ if __name__ == '__main__':
 
     modeltrainer = ModelTrainer()
     print(modeltrainer.initiate_model_trainer(train_arr, test_arr))
+
+    

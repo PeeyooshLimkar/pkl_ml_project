@@ -2,6 +2,7 @@ from setuptools import setup, find_packages
 from typing import List
 
 
+
 HYPHEN_E_DOT = '-e .' # to tell that setup.py file exist call it and build it
 
 # recieving and returning
@@ -41,5 +42,5 @@ setup(
     # in otherwords these libraries/packages are dependencies for your package/library
     # install_requred = ['pandas', 'numpy', 'matplotlib', 'seaborn', 'plotly']
     install_required = get_requirements('requirements.txt')
-
 )
+

@@ -1,6 +1,8 @@
 import sys
 from src.logger import logging
 
+
+
 # error : own
 def error_message_detail(error, error_detail:sys):
 
@@ -35,3 +37,4 @@ class Custom_Exception(Exception):
 #     except Exception as e:
 #         logging.info('Divide By Zerro Error')
 #         raise Custom_Exception(e, sys)
+

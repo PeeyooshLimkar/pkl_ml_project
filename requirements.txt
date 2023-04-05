@@ -12,4 +12,6 @@ dill==0.3.6
 scikit-learn==1.2.1
 xgboost==1.7.2
 catboost==1.1.1
+flask==2.2.2
 # -e .
+

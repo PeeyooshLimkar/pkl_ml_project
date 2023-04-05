@@ -4,15 +4,12 @@ import sys
 import pandas as pd
 import numpy as np
 
-
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.pipeline import Pipeline
 
-
 from dataclasses import dataclass
-
 
 from src.exception import Custom_Exception
 from src.logger import logging
@@ -121,6 +118,7 @@ class DataTransformation:
                 self.data_transformation_config.preprocessor_obj_file_path
             )
 
-
         except Exception as e:
             raise Custom_Exception(e, sys)
+        
+        
